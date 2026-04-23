@@ -1,1 +1,129 @@
+INDEX.HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vila Games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregarCatalogo()">
 
+<header>
+  <h1>🎮 Vila Games</h1>
+  <input type="text" id="busca" placeholder="Buscar jogo..." onkeyup="buscar()">
+</header>
+
+<main class="catalogo" id="catalogo"></main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+==========================================================================================
+
+CS2 html
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar('aval3')">
+
+<div class="pagina">
+<h1>Counter Strike 2</h1>
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg">
+
+<p>FPS competitivo focado em estratégia e habilidade.</p>
+
+<div class="galeria">
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg">
+<img src="https://s2-ge.glbimg.com/9kR2h8-YaW-X8VClXrv07I7lHKU=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/D/Y/0rilB6T0ChOJROjiUHgg/cs2.jpg">
+</div>
+
+<div id="aval3" class="avaliacao">
+<span onclick="avaliar('aval3',1)">★</span>
+<span onclick="avaliar('aval3',2)">★</span>
+<span onclick="avaliar('aval3',3)">★</span>
+<span onclick="avaliar('aval3',4)">★</span>
+<span onclick="avaliar('aval3',5)">★</span>
+</div>
+
+<a class="botao" href="index.html">Voltar</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+===================================
+
+brawhalla.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Brawlhalla</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar('aval1')">
+
+<div class="pagina">
+<h1>Brawlhalla</h1>
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg">
+
+<p>Brawlhalla é um jogo de luta em plataforma gratuito inspirado em Smash Bros.</p>
+
+<div class="galeria">
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg">
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg">
+</div>
+
+<div id="aval1" class="avaliacao">
+<span onclick="avaliar('aval1',1)">★</span>
+<span onclick="avaliar('aval1',2)">★</span>
+<span onclick="avaliar('aval1',3)">★</span>
+<span onclick="avaliar('aval1',4)">★</span>
+<span onclick="avaliar('aval1',5)">★</span>
+</div>
+
+<a class="botao" href="index.html">Voltar</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+===========================================================================================
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ARK</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar('aval2')">
+
+<div class="pagina">
+<h1>ARK Survival Evolved</h1>
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/header.jpg">
+
+<p>Jogo de sobrevivência com dinossauros em mundo aberto.</p>
+
+<div class="galeria">
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/header.jpg">
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/346110/header.jpg">
+</div>
+
+<div id="aval2" class="avaliacao">
+<span onclick="avaliar('aval2',1)">★</span>
+<span onclick="avaliar('aval2',2)">★</span>
+<span onclick="avaliar('aval2',3)">★</span>
+<span onclick="avaliar('aval2',4)">★</span>
+<span onclick="avaliar('aval2',5)">★</span>
+</div>
+
+<a class="botao" href="index.html">Voltar</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
