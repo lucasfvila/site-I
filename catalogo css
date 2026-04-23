@@ -1,1 +1,96 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+}
 
+header {
+  text-align: center;
+  padding: 20px;
+  background: #1e293b;
+}
+
+#busca {
+  margin-top: 10px;
+  padding: 10px;
+  width: 220px;
+  border-radius: 8px;
+  border: none;
+}
+
+.catalogo {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  width: 260px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: cyan;
+}
+
+.nota {
+  margin-top: 8px;
+  color: gold;
+}
+
+.pagina {
+  text-align: center;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.pagina img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.galeria {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.galeria img {
+  width: 200px;
+}
+
+.avaliacao span {
+  font-size: 30px;
+  cursor: pointer;
+  color: gray;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #3b82f6;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
