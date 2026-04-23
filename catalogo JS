@@ -1,1 +1,64 @@
+const jogos = [
+  {
+    nome: "Brawlhalla",
+    img: "https://cdn.cloudflare.steamstatic.com/steam/apps/291550/header.jpg",
+    link: "brawlhalla.html",
+    id: "aval1"
+  },
+  {
+    nome: "ARK Survival Evolved",
+    img: "https://cdn.cloudflare.steamstatic.com/steam/apps/346110/header.jpg",
+    link: "ark.html",
+    id: "aval2"
+  },
+  {
+    nome: "Counter Strike 2",
+    img: "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
+    link: "cs2.html",
+    id: "aval3"
+  }
+];
 
+function carregarCatalogo() {
+  const catalogo = document.getElementById("catalogo");
+  catalogo.innerHTML = "";
+
+  jogos.forEach(jogo => {
+    let nota = localStorage.getItem(jogo.id) || "0";
+
+    catalogo.innerHTML += `
+      <div class="card">
+        <img src="${jogo.img}">
+        <h2>${jogo.nome}</h2>
+        <div class="nota">⭐ ${nota}/5</div>
+        <a href="${jogo.link}">Abrir</a>
+      </div>
+    `;
+  });
+}
+
+function avaliar(id, nota) {
+  let estrelas = document.querySelectorAll(`#${id} span`);
+
+  localStorage.setItem(id, nota);
+
+  estrelas.forEach((e, i) => {
+    e.style.color = i < nota ? 'gold' : 'gray';
+  });
+}
+
+function carregar(id) {
+  let nota = localStorage.getItem(id);
+  if (!nota) return;
+  avaliar(id, nota);
+}
+
+function buscar() {
+  let input = document.getElementById("busca").value.toLowerCase();
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    let nome = card.innerText.toLowerCase();
+    card.style.display = nome.includes(input) ? "block" : "none";
+  });
+}
